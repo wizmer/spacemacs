@@ -58,6 +58,8 @@
         "gb" 'anaconda-mode-go-back
         "gu" 'anaconda-mode-find-references)
       (evilified-state-evilify anaconda-mode-view-mode anaconda-mode-view-mode-map
+        (kbd "k") 'previous-error-no-select
+        (kbd "j") 'next-error-no-select
         (kbd "q") 'quit-window)
       (spacemacs|hide-lighter anaconda-mode)
 
